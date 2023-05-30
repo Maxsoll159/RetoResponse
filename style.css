@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;900&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav a {
+    margin-left: 20px;
+}
+
+.principal {
+    height: calc(100vh - 89px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal h1 {
+    font-size: 40px;
+    color: #0a0738;
+    font-weight: 900;
+}
+
+.principal p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.principalForm {
+    margin-top: 20px;
+}
+
+.principal input {
+    border: 1px solid black;
+    padding: 15px;
+    width: 60%;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.principal button {
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #2f65f9;
+    padding: 15px;
+    width: 30%;
+}
+
+.sectionProductive {
+    background-image: url('./images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.colorSection {
+    background-color: #f8f8fe;
+}
+
+.sectionProductive2 {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.sectionProductive2 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0a0738;
+}
+
+.sectionProductiveParrajo {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 75%;
+    margin-bottom: 20px;
+    color: #4f4d63;
+    font-weight: 500;
+}
+
+.sectionProductive2 a {
+    color: #4f9c8f;
+    font-size: 18px;
+}
+
+.contenedorAncor {
+    border-bottom: 2px solid #4f9c8f;
+    display: inline;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.containerAvatar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.parrajoCard {
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.containerNombre:first-child {
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    .principal img {
+        width: 100%;
+    }
+
+    .principal h1 {
+        text-align: center;
+    }
+
+    .principal p {
+        text-align: center;
+    }
+
+    .principalForm input {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .principal button {
+        width: 100%;
+    }
+
+    .sectionProductive2 {
+        flex-direction: column-reverse;
+    }
+    
+    .imagenPrin2 {
+        width: 100%;
+    }
+
+    .sectionProductiveParrajo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sectionProductive2 h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contenedorAncor {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav img {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        background-color: red;
+    }
+
+}
